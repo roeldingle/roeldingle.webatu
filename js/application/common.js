@@ -1,34 +1,11 @@
-$(function(){
+define([
+    'jquery',
+    'underscore',
+    'backbone',
+    ], function($, _, Backbone) {
 
-    var methods = basicMethod();
-	var events = basicEvents(methods);
-	events.load();
-    
-    
-    
+    var Common = {
 
-});
-
-function basicEvents( method ) {
-	return {
-        
-        load: function(){
-            var self = this;
-            self.initialized();
-        },
-        
-        initialized: function(){
-            method.socialIconAnimate();
-        },
-
-        events:
-    }
-}
-
-
-function basicMethod( ) {
-	return {
-        
         /*animate the social icons*/
         socialIconAnimate: function(){
             $('.web-icons img').load(function() {
@@ -43,14 +20,9 @@ function basicMethod( ) {
                     height: height * (enter ? 1.05 : 1)
                 });
             });
-        },
-        
-        test: function(){
-            alert(123);
         }
+
+
     }
-}
-
-
-
-
+        return Common;
+});

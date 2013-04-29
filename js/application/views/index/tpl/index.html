@@ -1,0 +1,79 @@
+ <!--wrap -->
+    <div id="wrap">
+    
+        <!-- container -->
+        <div class="container">
+    
+            <!--header-->
+            <div class="row-fluid" id="header">
+                <div class="span12">
+                    <h1><%=rows.title%><small class="g-font-2">Web Developer</small></h1>
+                </div>
+            </div> <!--/header-->
+            
+             <!--content head-->
+            <div class="row-fluid" >
+                <div class="span9" id="content">
+                     <div class="lead" id="real-content" >
+                        <p>&nbsp;&nbsp;&nbsp;Hi there !
+                        I'm <a href="javascript:void(0);" class="menu-nav" title="profile" >Roel M. Dingle</a>,</p>
+                        <p>a <strong>Filipino</strong> Web Developer </p>
+                        <p>based in <strong>Manila</strong> .</p>
+                        <p>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="menu-nav" title="works" >I create</a> dynamic and highly efficient <strong>Websites</strong> and Web Based <strong>Systems</strong>.</p>
+                        <br />
+                        <p>&nbsp;&nbsp;&nbsp;Happy to <a href="javascript:void(0);" class="menu-nav" title="services">help</a> or <strong>assist</strong>.</p>
+                    </div>
+                </div>
+                <div class="span3" style="border:4px dashed #cacaca;padding:2%;font-size:22px;">
+                
+                    <!--loop skills-->
+                     <%_.each(rows.skills, function(skills){%>
+                        <p><img src="images/icon_checked.png"  />
+                            <a href="#">
+                            <%=skills%>
+                            </a>
+                        </p>
+                    <%})%>
+
+
+                </div>
+               
+            </div> <!--/content head-->
+            
+            
+        </div> <!-- /container -->
+        
+        <div id="push"></div>
+        
+        <div class="container" id="footer">
+    
+        <div class="row-fluid " >
+            <div class="span2">  
+                <img src="images/me.jpg" class="img-circle img-polaroid"   />
+            </div>
+            <div class="span10" style="text-align:left;font-size:20px;" >
+                <p><a href="#" >Let's get in touch</a></p><br />
+                
+                <!--loop social-->
+                 <%_.each(rows.social, function(social){%>
+                    <a href="<%=social.link%>" target="_blank" class="web-icons" >
+                        <img src="<%=social.image%>" class="img-rounded" />
+                    </a>
+                    
+                <%})%>
+                
+            </div>
+            
+            
+        
+        </div>
+        <div class="row-fluid ">
+            <div   style="text-align:right"> 
+               <small>Copyright <abbr title="Copyright">©</abbr>
+                <!--<?php echo date("Y")." ".$aData['title']; ?>.-->
+                <%=rows.title%>
+            </small> 
+            </div>
+        </div>
+       
+    </div> <!-- /wrap -->
