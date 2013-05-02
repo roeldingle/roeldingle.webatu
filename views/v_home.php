@@ -12,7 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
     
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-
+    <link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <?php $aData = json_encode($aData,true); ?>
     <script type="text/javascript">
         var Data = '<?php echo $aData; ?>';
@@ -22,6 +22,7 @@
   <body>
   
   </body>
+
   <script data-main="js/application/bootstrap" src="js/libs/require/require.js"></script>
-  
+
 </html>

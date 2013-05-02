@@ -6,9 +6,11 @@
     
             <!--header-->
             <div class="row-fluid" id="header">
-                <div class="span12">
-                    <h1><%=rows.title%><small class="g-font-2">Web Developer</small></h1>
-                </div>
+                <a href="javascript:location.reload();">
+                    <div class="span12">
+                        <h1><%=rows.title%><small class="g-font-2">Web Developer</small></h1>
+                    </div>
+                </a>
             </div> <!--/header-->
             
              <!--content head-->
@@ -42,7 +44,6 @@
             
             
         </div> <!-- /container -->
-        
         <div id="push"></div>
         
         <div class="container" id="footer">
@@ -67,9 +68,10 @@
             
         
         </div>
+
         <div class="row-fluid ">
             <div   style="text-align:right"> 
-               <small>Copyright <abbr title="Copyright">©</abbr>
+               <small>Copyright <abbr title="Copyright">&#169;</abbr>
                 <!--<?php echo date("Y")." ".$aData['title']; ?>.-->
                 <%=rows.title%>
             </small> 
