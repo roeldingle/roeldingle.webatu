@@ -57,7 +57,7 @@ define([
 
 				switch($(elem).attr('title')){
 					case "profile":
-						var tpl = _.template(profileTpl);
+						var tpl = _.template(profileTpl, {rows: phpData});
 					break;
 					case "works":
 						var tpl = _.template(worksTpl, {rows: phpData});

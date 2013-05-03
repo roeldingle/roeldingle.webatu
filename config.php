@@ -42,6 +42,33 @@ class Config{
 
 	}
 
+    function getProfileData(){
+        return $aData = array(
+                array(
+                    "label" => "Happiness",
+                    "image" => "happy.png",
+                    "content" => "&nbsp;&nbsp;Spending time with my family&#44;Providing and caring for my family&#44;Cuddling with my wife&#44;Hugging my daughters&#44;Drinking sessions with closes friends&#44;Waking up in the morning and be thankful...&#44;"
+                    ),
+                 array(
+                    "label" => "Passions",
+                    "image" => "love.png",
+                    "content" => "&nbsp;&nbsp;Coding sensible sytems&#44;Programming applications&#44;Designing sites&#44; Taking one for the team&#44; Finishing missions&#44; Achieving goals..."
+                    ),
+                  array(
+                    "label" => "Admirations",
+                    "image" => "choosen.png",
+                    "content" => "I admire thoose who purses and achieved...<br />(Bill gates)(Steve Jobs)(John Resig)(Tim Berners-Lee)(James Gosling)(Rasmus Lerdorf)(Larry Page)(Sergey Brin)(Mark Zuckerberg)(Douglas Crockford)(Margarita Dingle)"
+                    ),
+                   array(
+                    "label" => "Entertainments",
+                    "image" => "game.png",
+                    "content" => "I get so hyped about... <br />(Walking Dead(TV))(Game of thrones(TV))(Sandwich(music))(Metal Gear(game))(Silent Hill(game))(NBA(sport))(Blur(music))(Fatal frame(game))(NBA Live(game))(Breaking bad(TV))(Nickelback(music))(NFL(sport))(NFS(game))(CABAL(game))(DOTA(game))(Dexter(TV))(Eraserheads(music))"
+                    )
+
+            );
+
+    }
+
 	function getWorksData(){
 
 		return $aData = array(

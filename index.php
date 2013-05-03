@@ -6,12 +6,13 @@ class Index extends Config{
         /*variables*/
         $aData = array(
             "title" => "Roel Dingle",
+            "profile" => parent::getProfileData(),
             "skills" => parent::getSkillsdata(),
             "social" => parent::getSocialData(),
             "works" => parent::getWorksData()
         );
 
-        include('views/v_home.php');
+        include('views/v_index.php');
     }
 
 
