@@ -168,7 +168,12 @@
             <div class="span2">  
                 <img src="images/me.jpg" class="img-circle img-polaroid"   />
             </div>
-            <div class="span10" style="text-align:left;font-size:20px;" >
+            <div class="span2">
+              <a href="https://dl.dropboxusercontent.com/u/55912623/Roel%20M.%20Dingle%20(resume).pdf" target="_blank"> 
+                <img src="http://i.imgur.com/7sdIC1n.png" title="Hosted by imgur.com"/>
+              </a>
+            </div>
+            <div class="span8" style="text-align:left;font-size:20px;" >
                 <p><a href="#" >Let's get in touch</a></p><br />
                 
                 <!--loop social-->

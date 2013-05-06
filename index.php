@@ -12,7 +12,7 @@ class Index extends Config{
             "works" => parent::getWorksData()
         );
 
-        include('views/v_index.php');
+        include('views/v_home.php');
     }
 
 
